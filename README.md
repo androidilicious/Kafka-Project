@@ -45,13 +45,13 @@ The system tracks 10 major stocks (AAPL, GOOGL, MSFT, AMZN, TSLA, META, NVDA, JP
 - ✅ **Multiple visualizations**: time series, bar charts, pie charts
 - ✅ **Configurable parameters** via environment variables
 
-### Bonus Features (Advanced)
-- 🌟 **Apache Flink Integration** (10%+ bonus)
+### Bonus Features 
+- 🌟 **Apache Flink Integration**
   - Tumbling window aggregations (1-minute windows)
   - Real-time metrics: AVG, MIN, MAX, SUM, COUNT
   - Separate aggregated metrics table
   
-- 🌟 **Anomaly Detection Model** (10%+ bonus)
+- 🌟 **Anomaly Detection Model** 
   - Isolation Forest for multivariate anomaly detection
   - Statistical outlier detection (Z-score method)
   - Sequential pattern analysis
@@ -144,7 +144,7 @@ python consumer.py
 ```
 This consumes events from Kafka and stores them in PostgreSQL.
 
-#### Terminal 3: Start the Aggregator (Optional - Bonus Feature)
+#### Terminal 3: Start the Aggregator 
 ```bash
 python aggregator.py
 ```
@@ -185,7 +185,7 @@ PRODUCER_INTERVAL=0.5           # Seconds between trades
 STREAMLIT_REFRESH_INTERVAL=2    # Dashboard refresh interval
 ```
 
-## 🤖 Anomaly Detection (Bonus Feature)
+## 🤖 Anomaly Detection 
 
 **Train:** `python anomaly_detector.py train` (requires 1000+ trades per symbol)
 
@@ -193,7 +193,7 @@ STREAMLIT_REFRESH_INTERVAL=2    # Dashboard refresh interval
 
 **Methods:** Isolation Forest (multivariate), Z-score (statistical outliers), sequential pattern analysis
 
-## 🌊 Apache Flink Integration (Bonus Feature)
+## 🌊 Apache Flink Integration 
 
 **Run:** `python aggregator.py`
 
